@@ -92,6 +92,7 @@ private:
 
 	void OnSight(AActor* SightActor, const bool& IsSight);
 	void OnHear(const FVector& StimulusLocation);	
+	void OnDamage(const FVector& StimulusLocation);
 
 	const FVector GetRandomPointInArea(const FVector& PointSearch, const double& AreaSearch);
 	const FVector GetPointForInvestigate(const FVector& PointSearch, const double& AreaSearch);
@@ -109,5 +110,4 @@ public:
 	void SetPerceptionEnable(const bool& Value);
 
 	void SetTextStateBot();
-	void OnDamage(const FVector& StimulusLocation);
 };

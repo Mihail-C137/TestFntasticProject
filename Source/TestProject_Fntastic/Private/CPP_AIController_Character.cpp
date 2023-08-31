@@ -149,14 +149,10 @@ void ACPP_AIController_Character::GetPerceptionValues()
 		{
 			DistanceSight = SenseConfig_Sight->SightRadius;
 			LoseAreaSight = SenseConfig_Sight->LoseSightRadius;
-
-			UE_LOG(LogTemp, Error, TEXT("DistanceSight %f"), DistanceSight)
 		}
 		if (UAISenseConfig_Hearing* SenseConfig_Sight = Cast<UAISenseConfig_Hearing>((*Sense)))
 		{
 			DistanceHear = SenseConfig_Sight->HearingRange;
-
-			UE_LOG(LogTemp, Error, TEXT("DistanceHear %f"), DistanceHear)
 		}
 	}
 }

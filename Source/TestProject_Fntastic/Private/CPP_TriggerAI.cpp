@@ -43,7 +43,6 @@ void ACPP_TriggerAI::CreateContextWidget()
 
 	if (CharacterWidgetComponent)
 	{
-		UE_LOG(LogTemp, Error, TEXT("CharacterWidgetComponent"))
 		CharacterWidgetComponent->RegisterComponent();
 		CharacterWidgetComponent->SetWidgetClass(ContextWidgetInstance);
 		CharacterWidgetComponent->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::SnapToTargetIncludingScale);
@@ -56,7 +55,6 @@ void ACPP_TriggerAI::DestroyContextWidget()
 {
 	if (CharacterWidgetComponent)
 	{
-		UE_LOG(LogTemp, Error, TEXT("CharacterWidgetComponent->DestroyComponent()"))
 		CharacterWidgetComponent->DestroyComponent();
 	}
 }
